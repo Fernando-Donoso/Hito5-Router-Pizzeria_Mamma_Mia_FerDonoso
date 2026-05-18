@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: hito5-pizzeria-router
+    staticPublishPath: Frotend/dist
+    buildCommand: cd Frotend && npm install && npm run build
+    buildFilter:
+      paths:
+        - Frotend/**
